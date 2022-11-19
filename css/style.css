@@ -48,7 +48,7 @@ nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: rgba(0, 0, 0, .3);
+    background-color: rgba(0, 0, 0, .1);
     backdrop-filter: blur(10px);
     z-index: 1;
 }
@@ -760,16 +760,15 @@ form button:hover {
     .pg1{
         padding: 0;
         height: 90vh;
-        /* background-color: gray; */
     }
 
     .pg1 .text p{
-        margin-top: 1.4vh;
+        margin-top: 1.2vh;
         font-size: 2vh;
     }
 
     .pg1 .text h4{
-        font-size: 3.7vh;
+        font-size: 3.9vh;
         margin: 0;
     }
 
@@ -827,7 +826,7 @@ form button:hover {
     .card {
         align-items: center;
         text-align: center;
-        padding: 3vh 2vh;
+        padding: 3vh;
         height: 20vh;
         width: 60vw;
     }
@@ -838,11 +837,11 @@ form button:hover {
 
     .cards h3 {
         margin-top: 2vh;
-        font-size: 1.8vh;
+        font-size: 2vh;
     }
 
     .cards p {
-        font-size: 1.3vh;
+        font-size: 1.8vh;
     }
 
     .cards img {
@@ -968,7 +967,7 @@ form button:hover {
     }
 
     .behancegallery{
-        margin: 0 0 20vh 0;
+        margin: 0 0 10vh 0;
         gap: 0 1.5vw;
     }
 
