@@ -23,7 +23,7 @@ html {
 body {
     width: 100%;
     overflow-x: hidden;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("https://img.freepik.com/free-photo/starry-night-sky_1048-11828.jpg?w=996&t=st=1668438014~exp=1668438614~hmac=a875223815f838bc6141be44fb0383fcc64fc58e5c4fb98e777386b35c1dc749");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.95)), url("https://img.freepik.com/free-photo/starry-night-sky_1048-11828.jpg?w=996&t=st=1668438014~exp=1668438614~hmac=a875223815f838bc6141be44fb0383fcc64fc58e5c4fb98e777386b35c1dc749");
     background-size: contain;
     width: 100%;
     display: flex;
@@ -74,7 +74,7 @@ nav a {
 }
 
 nav a:hover {
-    padding-bottom: 10px;
+    padding: 1vh;
 }
 
 .logo h2 {
