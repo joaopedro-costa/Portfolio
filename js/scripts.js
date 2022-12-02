@@ -68,17 +68,20 @@ function menu() {
 
 /*--------NAVBAR EFFECT--------------*/
     
-const activePage = window.location.pathname
+const activePage = window.location.href
 const navLinks = document.querySelectorAll("nav ul li a").forEach(link => {
-    if(link.href.includes(`${activePage}`)){
+    if(link.href === window.location.href){
         link.classList.add("active")
-    }
+    }else(link.classList.remove("active"))
 });
+
+console.log(activePage)
+console.log("funcionou")
 
 /*----------- LOADER --------------*/
 
-// function loader(){
-//     const loading = document.querySelector("body")
-//     var loader = document.querySelector(".loader")
-//     loader.style.display = "none"
-// }
+function loader(){
+    const loading = document.querySelector("body")
+    var loader = document.querySelector(".loader")
+    loader.style.display = "none"
+}

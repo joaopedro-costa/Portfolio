@@ -103,7 +103,7 @@ nav a:hover {
 
 /*-------- MOBILE MENU ------------*/
 
-.hamburguer .line{
+.hamburguer .lineburguer{
     width: 3.4vh;
     height: 1px;
     background-color: white;
@@ -126,15 +126,15 @@ nav a:hover {
     z-index: 20;
 }
 
-.mudar .line:nth-child(1){
+.mudar .lineburguer:nth-child(1){
     transform: translateY(10px) rotate(-45deg);
 }
 
-.mudar .line:nth-child(2){
+.mudar .lineburguer:nth-child(2){
     width: 0;
 }
 
-.mudar .line:nth-child(3){
+.mudar .lineburguer:nth-child(3){
     transform: translateY(-10px) rotate(-135deg);
 }
 
