@@ -64,3 +64,21 @@ function menu() {
     let menu = document.querySelector('.hamburguermenu')
     menu.classList.toggle('ativar')
 }
+
+
+/*--------NAVBAR EFFECT--------------*/
+    
+const activePage = window.location.pathname
+const navLinks = document.querySelectorAll("nav ul li a").forEach(link => {
+    if(link.href.includes(`${activePage}`)){
+        link.classList.add("active")
+    }
+});
+
+/*----------- LOADER --------------*/
+
+// function loader(){
+//     const loading = document.querySelector("body")
+//     var loader = document.querySelector(".loader")
+//     loader.style.display = "none"
+// }

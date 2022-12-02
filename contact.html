@@ -10,7 +10,7 @@
     <script src="https://kit.fontawesome.com/b5c3d917c6.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="images/JP.png" type="image/x-icon">
 </head>
-<body>
+<body onload="loader()">
     <nav>
         <div class="navbar">
             <div class="logo">
@@ -88,9 +88,24 @@
         </div>
     </main>
 
+    <div class="loader">
+        <div class="external-line"></div>
+        <div class="external-line2"></div>
+        <div class="line"></div>
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+        <div class="line4"></div>
+    </div>
+
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery.magnific-popup.js"></script>
     <script src="js/scripts.js"></script>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+        $(window).on("load", function (){
+            $(".loader").fadeOut()
+        })
+    </script>
 </body>
 </html>

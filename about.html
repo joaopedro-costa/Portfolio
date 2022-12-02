@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,10 +8,12 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/loader.css">
     <script src="https://kit.fontawesome.com/b5c3d917c6.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="images/JP.png" type="image/x-icon">
 </head>
-<body>
+
+<body onload="loader()">
     <nav>
         <div class="navbar">
             <div class="logo">
@@ -19,7 +22,7 @@
                 </a>
             </div>
             <div class="menu">
-                <p id="portuguese">PT</p>
+                <p id="portuguese" onaclick="ptbr()">PT</p>
                 <p id="english">ENG</p>
                 <ul>
                     <li><a class="nav-link" href="gallery.html">Gallery</a></li>
@@ -66,7 +69,8 @@
 
     <div class="about">
         <img class="hiddenleft" src="images/about photo.webp">
-        <p class="hiddenright">I have been interested in IT area since childhood, witch made me choose to study Computer Engineering, in
+        <p id="aboutme" class="hiddenright">I have been interested in IT area since childhood, witch made me choose to
+            study Computer Engineering, in
             parallel, I take a Web Development course focused on Front-End, to deepen and train myself more and more in
             the area. I'm also learning User-Experience (UX) and User Interface (UI) Design to improve my projects and
             my portfolio progressively, applying the concepts that I know about graphic design along with the HTML, CSS
@@ -76,12 +80,29 @@
             photographer as well, making the arts for social networks and company ads. In this experience I acquired
             deep knowledge In the entire office package, Git and GitHub, Photoshop, Illustrator, Premiere and After
             Effects.<br> <br>
-            Visit my <a href="https://www.linkedin.com/in/jo%C3%A3o-pedro-costa-409831157/">linkedin</a> profile for more details or <a href="contact.html">contact me</a>.</p>
-        </div>
+            Visit my <a href="https://www.linkedin.com/in/jo%C3%A3o-pedro-costa-409831157/">linkedin</a> profile for
+            more details or <a id="contactme" href="contact.html">contact me</a>.</p>
+    </div>
+
+    <div class="loader">
+        <div class="external-line"></div>
+        <div class="external-line2"></div>
+        <div class="line"></div>
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+        <div class="line4"></div>
+    </div>
 
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery.magnific-popup.js"></script>
     <script src="js/scripts.js"></script>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+        $(window).on("load", function (){
+            $(".loader").fadeOut()
+        })
+    </script>
 </body>
+
 </html>

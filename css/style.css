@@ -23,7 +23,7 @@ html {
 body {
     width: 100%;
     overflow-x: hidden;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.95)), url("https://img.freepik.com/free-photo/starry-night-sky_1048-11828.jpg?w=996&t=st=1668438014~exp=1668438614~hmac=a875223815f838bc6141be44fb0383fcc64fc58e5c4fb98e777386b35c1dc749");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0.70)), url("https://wallpapercave.com/wp/wp3493594.png");
     background-size: contain;
     width: 100%;
     display: flex;
@@ -51,6 +51,10 @@ nav{
     background-color: rgba(0, 0, 0, .1);
     backdrop-filter: blur(10px);
     z-index: 1;
+}
+
+#portuguese:hover, #english:hover{
+    cursor: pointer;
 }
 
 .menu{
@@ -733,6 +737,13 @@ form button:hover {
     scale: 1;
 }
 
+/*------------ NAV EFFECT -------------*/
+
+.active{
+    color: #a930fa;
+    font-weight: 500;
+    text-decoration: solid;
+}
 
 /*-------------------------- MOBILE -----------------------------*/
 
